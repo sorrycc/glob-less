@@ -8,3 +8,4 @@ node_js:
   - iojs-1.1
 
 after_success: make coveralls
+
