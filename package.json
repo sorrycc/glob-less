@@ -1,0 +1,34 @@
+{
+  "name": "glob-less",
+  "version": "0.1.0",
+  "description": "Compile less files, support glob.",
+  "main": "index",
+  "bin": {
+    "glob-less": "bin/glob-less"
+  },
+  "dependencies": {
+    "commander": "~2.1.0",
+    "component-type": "~1.1.0",
+    "debug": "~2.1.1",
+    "globule": "~0.2.0",
+    "less": "~2.3.1"
+  },
+  "devDependencies": {
+    "coveralls": "2",
+    "istanbul": "0",
+    "jshint": "2",
+    "mocha": "1",
+    "rimraf": "~2.2.8",
+    "should": "3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sorrycc/glob-less"
+  },
+  "homepage": "https://github.com/sorrycc/glob-less",
+  "author": "chencheng <sorrycc@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "make test"
+  }
+}

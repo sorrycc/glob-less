@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var program = require('commander');
+var gless = require('glob-less');
+
+// usage
+
+program
+  .version(require('../package').version)
+  .option('-v, --verbose', 'verbose output')
+  .on('--help', helpInfo)
+  .parse(process.argv);
+
+gless(program.args);
+
+function helpInfo() {
+  console.log('  Examples:');
+  console.log();
+  console.log('    $ glob-less');
+  console.log();
+}
